@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity ="center"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:padding="24dp">
+    
+    <TextView
+        android:id ="@+id/studentlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text ="Student Log In"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "26dp"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow
+           android:id ="@+id/row_name"
+           android:layout_width="match_parent"
+           android:layout_height = "wrap_content"
+           android:gravity = "center_vertical">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="-13dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/user_icon_png"/>
+
+            <TextView
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom = "12dp"
+                android:text = "@string/student_name"
+                android:textSize = "20sp"
+                android:textStyle = "normal"/>
+
+            <EditText
+                android:id = "@+id/StudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom = "12dp"
+                android:hint = "Student Name"
+                android:inputType="textPersonName"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center_vertical">
+
+            <ImageView
+                android:id="@+id/email_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="-10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/email_png"/>
+
+            <TextView
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom = "12dp"
+                android:text = "@string/student_email"
+                android:textSize = "20sp"
+                android:textStyle = "normal"/>
+
+            <EditText
+                android:id = "@+id/StudentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom = "12dp"
+                android:hint = "Student Email"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center_vertical">
+
+            <ImageView
+                android:id="@+id/course_image"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="-10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/course_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom = "12dp"
+                android:text = "@string/student_course"
+                android:textSize = "20sp"
+                android:textStyle = "normal"/>
+
+            <EditText
+                android:id = "@+id/StudentCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom = "12dp"
+                android:hint = "Student Course"
+                android:inputType="textCapWords"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id = "@+id/row_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center_vertical">
+
+            <ImageView
+                android:id="@+id/password_image"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="-15dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/password_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom = "12dp"
+                android:text = "@string/student_password"
+                android:textSize = "20sp"
+                android:textStyle = "normal"/>
+
+            <EditText
+                android:id = "@+id/StudentPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom = "12dp"
+                android:hint = "Password"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/submitinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="Submit"
+        android:textSize="18sp"/>
+
+</LinearLayout>

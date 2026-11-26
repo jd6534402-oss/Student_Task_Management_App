@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Student Task Management App</string>
+    <string name="student_name">Full Name           :</string>
+    <string name="student_password">Password          :</string>
+    <string name="student_course">Student Course:</string>
+    <string name="student_email">Student Email   :</string>
+    <string name="add_task">Add Student Task</string>
+    <string name="view_task">View Student Task</string>
+    <string name="update_task">Update Student Task</string>
+    <string name="view_info">View Student Info</string>
+</resources>
